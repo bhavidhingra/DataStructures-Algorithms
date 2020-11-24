@@ -34,6 +34,14 @@ int rng(int lim) {
 	uniform_int_distribution<int> uid(0,lim-1);
 	return uid(rang);
 }
+template <typename... T>
+void read(T&... args) {
+    ((cin >> args), ...);
+}
+template <typename... T>
+void write(T&&... args) {
+    ((cout << args << " "), ...);
+}
 int mpow(int base, int exp); 
 void ipgraph(int n, int m);
 void dfs(int u, int par);
