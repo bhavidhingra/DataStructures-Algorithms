@@ -3,8 +3,6 @@ using namespace std;
 #define gc getchar_unlocked
 #define fo(i,n) for(i=0;i<n;i++)
 #define Fo(i,k,n) for(i=k;k<n?i<n:i>n;k<n?i+=1:i-=1)
-#define rangeN(i,n) for(i=0; i<n; i++)
-#define rangeMN(i,m,n) for(i=m; (m<n ? i<n : i>n); (m<n ? i++ : i--))
 #define rangeMND(i,m,n,d) for(i=m; (m<n ? i<n : i>n); i+=d)
 #define ll long long
 #define si(x)	scanf("%d",&x)
@@ -44,6 +42,10 @@ void read(T&... args) {
 template <typename... T>
 void write(T&&... args) {
     ((cout << args << " "), ...);
+}
+template <typename... T>
+void writeln(T&&... args) {
+    ((cout << args << end), ...);
 }
 int mpow(int base, int exp); 
 void ipgraph(int n, int m);
